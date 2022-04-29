@@ -9,7 +9,7 @@ import org.hibernate.Transaction;
 
 public class Main {
     private static final Logger LOGGER = LogManager.getLogger(Main.class);
-
+    private String pwd = "PASSWORD";
     public static void main(String[] args) {
         Session session = HibernateUtil.getSessionFactory().openSession();
         Transaction tx = session.beginTransaction();
